@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab5.ManageEmployee"
+             Title="Manage Employee">
+    <VerticalStackLayout>
+        <StackLayout>
+            <ListView x:Name="lstEmployee" HasUnevenRows="False" ItemSelected="LstEmployee_ItemSelected"
+                      Header="Header Value" Footer="Footer">
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="Blue" Padding="5,5,5,5">
+                            <Label Text="Name" FontSize="Medium" FontAttributes="Bold" TextColor="White" Padding="10" />
+                            <Label Text="Designation" FontSize="Medium" FontAttributes="Bold" TextColor="White" Padding="10"/>
+                            <Label Text="Department" FontSize="Medium" FontAttributes="Bold" TextColor="White" Padding="10"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
+                                <Label Text="{Binding EmpName}" FontSize="Medium" Padding="10" />
+                                <Label Text="{Binding Department}" FontSize="Medium" Padding="10" />
+                                <Label Text="{Binding Qualification}" FontSize="Medium" Padding="10"/>
+                                <Button Text="delete" HeightRequest="15" CommandParameter="{Binding EmpId}" Clicked="btnDeleteClick" FontSize="Micro" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.FooterTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
+                            <Button Text="Add New Employee" Clicked="OnNewClicked" />
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.FooterTemplate>
+            </ListView>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

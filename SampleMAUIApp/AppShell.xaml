@@ -11,8 +11,12 @@
         Title="Main Page"  
         ContentTemplate="{DataTemplate local:Bab4.MainPageNav}" />
 
-    <ShellContent  
+    <ShellContent  Route="detailpage" 
         Title="Detail Page"  
         ContentTemplate="{DataTemplate local:Bab4.DetailPageNav}" />
+
+    <ShellContent  Route="employeemanage" 
+      Title="Manage Employees"  
+      ContentTemplate="{DataTemplate local:Bab5.ManageEmployee}" />
 
 </Shell>

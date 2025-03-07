@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab5.ShowEmployee"
+             Title="ShowEmployee">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row ="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="Large" FontAttributes="Bold" Text="Employee Details" />
+            <Label Grid.Row ="1" Grid.Column="1" Text="Name" />
+            <Entry Grid.Row="1" Grid.Column="2" x:Name="txtEmpName" Text ="{Binding EmpName}" />
+            <Label Grid.Row ="2" Grid.Column="1" Text="Designation" />
+            <Entry Grid.Row="2" Grid.Column="2" x:Name="txtDesignation" Text ="{Binding Designation}"/>
+            <Label Grid.Row ="3" Grid.Column="1" Text="Department" />
+            <Entry Grid.Row="3" Grid.Column="2" x:Name="txtDepartment" Text ="{Binding Department}"/>
+            <Label Grid.Row ="4" Grid.Column="1" Text="Qualification" />
+            <Entry Grid.Row="4" Grid.Column="2" x:Name="txtQualification" Text ="{Binding Qualification}" />
+            <Button Grid.Row ="5" Grid.Column="1" Text="Edit Details" FontSize="Small" HeightRequest="20" Clicked="OnEditClicked" />
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

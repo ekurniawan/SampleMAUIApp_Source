@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab5.AddEmployee"
+             Title="AddEmployee">
+    <VerticalStackLayout>
+        <TableView Intent="Settings" BackgroundColor="White">
+            <TableRoot>
+                <TableSection Title="Add New Employee">
+                    <EntryCell x:Name="txtEmpName" Label="Employee Name" Keyboard="Text" />
+                    <EntryCell x:Name="txtDesign" Label="Designation" Keyboard="Text" />
+                    <EntryCell x:Name="txtDepartment" Label="Department" Keyboard="Text" />
+                    <EntryCell x:Name="txtQualification" Label="Qualification" Keyboard="Text" />
+                    <ViewCell>
+                        <ContentView Padding="0,0">
+                            <ContentView.Content>
+                                <Button BackgroundColor="#fd6d6d" Text="Save" TextColor="White" Clicked="OnSaveClicked"   />
+                            </ContentView.Content>
+                        </ContentView>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>
