@@ -1,4 +1,5 @@
 ﻿using SampleMAUIApp.Bab5;
+using SampleMAUIApp.Bab6;
 
 namespace SampleMAUIApp
 {
@@ -17,6 +18,20 @@ namespace SampleMAUIApp
                 return dbUtils;
             }
         }
+
+        private static IRestServices empServices;
+        public static IRestServices EmpServices
+        {
+            get
+            {
+                if (empServices == null)
+                {
+                    empServices = new RestServices();
+                }
+                return empServices;
+            }
+        }
+
 
 
         public App()

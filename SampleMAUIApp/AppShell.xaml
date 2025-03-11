@@ -15,8 +15,17 @@
         Title="Detail Page"  
         ContentTemplate="{DataTemplate local:Bab4.DetailPageNav}" />
 
+    <ShellContent  Route="navigation1" 
+        Title="Hierarchical Navigation"  
+        ContentTemplate="{DataTemplate local:Bab4.NavigationPage1}" />
+
     <ShellContent  Route="employeemanage" 
       Title="Manage Employees"  
       ContentTemplate="{DataTemplate local:Bab5.ManageEmployee}" />
+
+    <ShellContent  Route="todolist" 
+       Title="Todo List"  
+       ContentTemplate="{DataTemplate local:Bab6.TodoListPage}" />
+
 
 </Shell>

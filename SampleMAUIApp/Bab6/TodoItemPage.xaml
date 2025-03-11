@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab6.TodoItemPage"
+             Title="TodoItemPage">
+    <VerticalStackLayout>
+        <Label Text="Name" />
+            <Entry x:Name="nameEntry" Text="{Binding name}" Placeholder="task name" />
+            <Label Text="Notes" />
+            <Entry x:Name="notesEntry" Text="{Binding notes}" />
+            <Label Text="Done" />
+            <Switch x:Name="doneSwitch" IsToggled="{Binding done}" />
+            <Button Text="Save" Clicked="OnSaveActivated" Margin="5" />
+            <Button Text="Delete" Clicked="OnDeleteActivated" Margin="5" />
+            <Button Text="Cancel" Clicked="OnCancelActivated" Margin="5" />
+    </VerticalStackLayout>
+</ContentPage>

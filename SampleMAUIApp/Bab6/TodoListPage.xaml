@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab6.TodoListPage"
+             Title="Todo List Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="OnAddItemClicked">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ListView x:Name="listView" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" Refreshing="ListView_Refreshing" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <HorizontalStackLayout Padding="20,5,5,5">
+                            <Label Text="{Binding name}" VerticalTextAlignment="Center" />
+                            <Image Source="checked.png" Aspect="AspectFit" IsVisible="{Binding done}" />
+                        </HorizontalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
