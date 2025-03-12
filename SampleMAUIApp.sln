@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMAUIApp", "SampleMAUI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendAPI", "BackendAPI\BackendAPI.csproj", "{94E26889-6140-48BA-AD24-DCB5E593BA98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMVVM", "SampleMVVM\SampleMVVM.csproj", "{0E9ED60E-BF79-4673-A4C4-679C92059F60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,11 @@ Global
 		{94E26889-6140-48BA-AD24-DCB5E593BA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E26889-6140-48BA-AD24-DCB5E593BA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94E26889-6140-48BA-AD24-DCB5E593BA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9ED60E-BF79-4673-A4C4-679C92059F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9ED60E-BF79-4673-A4C4-679C92059F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9ED60E-BF79-4673-A4C4-679C92059F60}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0E9ED60E-BF79-4673-A4C4-679C92059F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9ED60E-BF79-4673-A4C4-679C92059F60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

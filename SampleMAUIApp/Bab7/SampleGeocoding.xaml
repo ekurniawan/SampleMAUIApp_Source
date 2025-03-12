@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab7.SampleGeocoding"
+             Title="SampleGeocoding">
+    <VerticalStackLayout>
+        <Entry x:Name="txtAlamat" Placeholder="Masukan Alamat" />
+        <Button x:Name="btnGeocoding" Text="Geocoding" 
+                    Clicked="btnGeocoding_Clicked" />
+        <Entry x:Name="txtLatitude" Placeholder="Masukan Latitude" />
+        <Entry x:Name="txtLongitude" Placeholder="Masukan Longitude" />
+        <Button x:Name="btnReverseGeo" Text="Reverse Geo" Clicked="btnReverseGeo_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

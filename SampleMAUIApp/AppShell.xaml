@@ -27,5 +27,7 @@
        Title="Todo List"  
        ContentTemplate="{DataTemplate local:Bab6.TodoListPage}" />
 
-
+    <ShellContent  Route="mauiessentials" 
+    Title="Maui Essentials"  
+    ContentTemplate="{DataTemplate local:Bab7.SampleGeocoding}" />
 </Shell>

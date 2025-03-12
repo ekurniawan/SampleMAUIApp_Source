@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMAUIApp.Bab7.AppInformation"
+             Title="AppInformation">
+    <VerticalStackLayout>
+        <Button x:Name="btnAppName" Text="Nama Aplikasi" Margin="5" Clicked="btnAppName_Clicked" />
+        <Button x:Name="btnPackageName" Text="Nama Package" Margin="5" Clicked="btnPackageName_Clicked" />
+        <Button x:Name="btnVersion" Text="Nama Versi" Margin="5" Clicked="btnVersion_Clicked" />
+        <Button x:Name="btnBuildNum" Text="Build Number" Margin="5" Clicked="btnBuildNum_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
