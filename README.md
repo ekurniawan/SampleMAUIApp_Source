@@ -1,4 +1,4 @@
 <img src="https://github.com/ekurniawan/SampleMAUIApp_Source/blob/master/images/cover.jpeg" width="500">
-The source code for the ebook titled "Easy and Fast Mobile Cross-Platform Application Development with .NET MAUI" can be downloaded from the following link: https://play.google.com/store/books/details?id=aSFOEQAAQBAJ&pli=1
+The source code for the ebook titled "Mudah dan Cepat Membuat Aplikasi Mobile Cross Platform dengan .NET MAUI" can be downloaded from the following link: https://play.google.com/store/books/details?id=aSFOEQAAQBAJ&pli=1
 
 This book discusses how to build Cross-Platform Mobile Applications (Android, iOS, and Windows) using .NET MAUI (.NET Multi-platform App UI). The topics covered in this book include .NET MAUI Architecture, Installation Process, Layout Design with XAML, Working with Data, Navigation, AppShell, Local Storage, Backend Services, MAUI Essentials, and the implementation of the MVVM Pattern. The book is accompanied by examples that can be directly tested and run both on emulators and real devices.
